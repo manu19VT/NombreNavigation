@@ -19,7 +19,7 @@ fun AppNavigation() {
         startDestination = "pantallaA"
     ) {
 
-        // Pantalla A (Lista)
+
         composable("pantallaA") {
             PantallaLista(
                 onNombreClick = { nombre ->
@@ -28,7 +28,7 @@ fun AppNavigation() {
             )
         }
 
-        // Pantalla B (Detalle)
+
         composable(
             route = "pantallaB/{nombre}",
             arguments = listOf(navArgument("nombre") { type = NavType.StringType })
@@ -43,7 +43,7 @@ fun AppNavigation() {
             )
         }
 
-        // Pantalla C (Confirmación)
+
         composable("pantallaC") {
             PantallaConfirmacion(
                 onRegresarInicio = {
